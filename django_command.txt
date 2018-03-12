@@ -1,0 +1,7 @@
+pip install django
+(or pip install django==1.9)
+mkdir django-tutorials
+cd django-tutorials
+django-admin startproject [mysite or anyname]
+cd mysite
+python manage.py runserver
