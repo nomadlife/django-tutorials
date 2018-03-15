@@ -5,3 +5,11 @@ cd django-tutorials
 django-admin startproject [mysite or anyname]
 cd mysite
 python manage.py runserver
+
+python manage.py startapp community
+
+** after make model
+python manage.py makemigrations [appname]
+  --> check if there are changed
+python manage.py migrate
+  --> create DB
