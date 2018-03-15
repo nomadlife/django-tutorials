@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>write</title>
+</head>
+<body>
+	hello django!
+	<form action="" method="post">
+	{% comment %}
+		{{form.as_table}}
+		{{form.as_p}}
+	{% endcomment %}
+	{{ form.as_p }}
+	{% csrf_token %}
+	<button type="submit" class="btn btn-primary">SAVE</button>
+	</form>
+</body>
+</html>
