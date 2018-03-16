@@ -1,12 +1,16 @@
+** install
 pip install django
 (or pip install django==1.9)
 mkdir django-tutorials
 cd django-tutorials
-django-admin startproject [mysite or anyname]
-cd mysite
-python manage.py runserver
 
+** new project
+django-admin startproject [mysite or anyname]
+
+** new app
+cd mysite
 python manage.py startapp community
+python manage.py runserver
 
 ** after make model
 python manage.py makemigrations [appname]
