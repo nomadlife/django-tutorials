@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 	path('write/', write, name="write"),
 	path('list/', list, name="list"),
-    path('view/(?P<num>[0-9])/', view),
+    path('view/<num>/', view),
 ]

@@ -6,11 +6,12 @@
 </head>
 <body>
 	hello django!
-	<form action="" method="post">
+	<form action="" method="POST">
 	{% comment %}
 		{{form.as_table}}
 		{{form.as_p}}
 	{% endcomment %}
+
 	{{ form.as_p }}
 	{% csrf_token %}
 	<button type="submit" class="btn btn-primary">SAVE</button>
