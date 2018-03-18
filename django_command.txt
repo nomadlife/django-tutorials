@@ -54,3 +54,16 @@ python manage.py migrate
 >>> song.file_type = 'mp3'
 >>> song.song_title = 'I hate my boyfriend'
 >>> song.save()
+
+ch18. Related Objects Set
+
+album1.song_set.all()
+album1.song_set.create(song_title='I love bacon', file_type='mp3')
+album1.song_set.create(song_title='bucky is lucky', file_type='mp3')
+album1.song_set.create(song_title='Ice cream', file_type='mp3')
+
+song=album1.song_set.create(song_title='I love bacon', file_type='mp3')
+song.album
+song.song_title
+album1.song_set.all()
+album1.song_set.count()
