@@ -17,3 +17,40 @@ python manage.py makemigrations [appname]
   --> check if there are changed
 python manage.py migrate
   --> create DB
+
+** DB api
+>>> Album.objects.all()
+
+>>> a = Album(artist="Taylor Swift",
+	album_title="Red",
+	genre="Country",
+	album_logo="https://~~~")
+>>> a.save()
+>>> a.artist
+>>> a.album_title
+>>> a.id
+1
+>>> a.pk
+1
+>>> b = Album()
+>>> b.artist = "Myth"
+>>> b.album_title = "High school"
+>>> b.genre = "Punk"
+>>> b.album_logo = "https://~~~"
+>>> b.save()
+
+>>> Album.objects.all()
+>>> Album.objects.filter(id=1)
+>>> Album.objects.filter(artist__startwith='Taylor')
+
+
+
+>>> from music.models import Album, Song
+>>> album1 = Album.objects.get(pk=1)
+>>> album1.artist
+
+>>> song = Song()
+>>> song.album = album1
+>>> song.file_type = 'mp3'
+>>> song.song_title = 'I hate my boyfriend'
+>>> song.save()
