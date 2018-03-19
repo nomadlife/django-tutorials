@@ -1,0 +1,2 @@
+**Bootstrap or style.css
+when load bootstrap stylesheet from cdn, what does intergrity, crossorigin property mean? 
