@@ -5,12 +5,8 @@ app_name = 'music'
 
 urlpatterns = [
     # /music/
-    path('', views.index, name='index'),
+    path('', views.IndexView.as_view(), name='index'),
 
     # /music/<album_id>/
-    path('<album_id>/', views.detail, name='detail'),
-
-    # /music/<album_id>/favorite/
-    path('<album_id>/favorite/', views.favorite, name='favorite')
-
+    path('<pk>/', views.DetailView.as_view(), name='detail'),
 ]
