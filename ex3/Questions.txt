@@ -2,3 +2,5 @@
 when load bootstrap stylesheet from cdn, what does intergrity, crossorigin property mean?
 
 **Bootstrap is version dependant. adjust bootstrap version to tutor's. 
+
+** how to setup default url when user didn't input specific url.
