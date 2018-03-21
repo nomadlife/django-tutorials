@@ -18,6 +18,9 @@ python manage.py makemigrations [appname]
 python manage.py migrate
   --> create DB
 
+** make super user account for DB (after make table)
+python manage.py createsuperuser
+
 ** DB api
 >>> Album.objects.all()
 
