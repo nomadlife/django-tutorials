@@ -1,6 +1,5 @@
 {% extends 'music/base.html' %}
-{% block title %} Add a New Album {% endblock %}
-{% block albums_active %} active {% endblock %}
+{% block title %} registration {% endblock %}
 
 {% block body %}
 <div class="container-fluid">
@@ -8,9 +7,9 @@
     <div class="col-sm-12 com-md-7">
       <div class="panel panel-default">
         <div class="panel-body">
-          <h3>Add a New Album</h3>
+          <h3>Create a New Account</h3>
           {% if error_message %}
-            <p><strong>{{ error_message }}</strong></p>
+          <p><strong>{{ error_message }}</strong></p>
           {% endif %}
           <form action="" class="form-horizontal" method="post" enctype="multipart/form-data">
             {% csrf_token %}
