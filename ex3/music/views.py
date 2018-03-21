@@ -42,7 +42,7 @@ class UserFormView(View):
         form = self.form_class(request.POST)
 
         if form.is_valid():
-            user = form.save(commit=false)
+            user = form.save(commit=False)
 
             # cleaned (normalized) data
             username = form.cleaned_data['username']
@@ -54,7 +54,6 @@ class UserFormView(View):
             user = authenticate(username=username, password=password)
 
             if user is not None:
-
                 if user.is_active:
                     login(request, user)
                     return redirect('music:index')
