@@ -1,4 +1,4 @@
-from rest framework import serializers
+from rest_framework import serializers
 from .models import Stock
 
 class StockSerializer(serializers.ModelSerializer):
@@ -6,4 +6,3 @@ class StockSerializer(serializers.ModelSerializer):
         model = Stock
         # fields = ('ticker','volume')
         fields = '__all__'
-        
