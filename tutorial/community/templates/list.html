@@ -5,9 +5,9 @@
 	<title>list</title>
 </head>
 <body>
+	this is list page
 	<ul>
-		this is list page
-		<li>Title | Writer | Date </li>
+		Title | Writer | Date
 		{% for article in articleList %}
 		<li><a href="/view/{{article.id}}">{{ article.title }}</a> | {{ article.name}} | {{ article.cdate|date:"D d M Y"}}</li>
 		{% endfor%}
